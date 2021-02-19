@@ -1,7 +1,7 @@
 package main // https://leetcode-cn.com/problems/fibonacci-number/
 
 func main() {
-	println(fib(90))
+	println(fib(100))
 }
 
 /* .   /
