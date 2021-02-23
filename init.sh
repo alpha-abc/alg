@@ -6,7 +6,7 @@ D=$1
 LINK=$2
 
 if [ -d "$D" ]; then
-	echo "$D exists"
+	echo -e "\033[31m $D exists \033[0m"
 	exit 0
 fi
 
