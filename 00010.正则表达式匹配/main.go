@@ -2,13 +2,6 @@ package main // https://leetcode-cn.com/problems/regular-expression-matching/
 
 import "fmt"
 
-/*
- * @lc app=leetcode.cn id=10 lang=golang
- *
- * [10] 正则表达式匹配
- */
-
-// @lc code=start
 
 /*
 e.g.
@@ -34,7 +27,6 @@ dp[i][j] =
 	|				// s[i-1] != p[j-1] and p[j-1] == '*'
 		| dp[i][j-2]	// s[i-1] != p[j-2]
 		| dp[i-1][j]	// s[i-1] == p[j-2]
-
 
 */
 func isMatch(s string, p string) bool {
@@ -73,8 +65,6 @@ func isMatch(s string, p string) bool {
 	return dp[ns][np]
 }
 
-// @lc code=end
-
 func printDP(dp [][]bool) {
 	for i := 0; i < len(dp); i++ {
 		for j := 0; j < len(dp[i]); j++ {
@@ -91,3 +81,4 @@ func main() {
 	fmt.Println(isMatch("ab", ".*"))                  // true
 	fmt.Println(isMatch("aab", "c*a*b*"))             // true
 }
+

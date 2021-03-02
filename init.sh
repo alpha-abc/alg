@@ -2,15 +2,18 @@
 
 # e.g. init.sh {DIR} {LINK}
 
-D=$1
-LINK=$2
+ID=$1
+TITLE=$2
+LINK=$3
 
-if [ -d "$D" ]; then
-	echo -e "\033[31m $D exists \033[0m"
+DIR=$ID.$TITLE
+
+if [ -d "$DIR" ]; then
+	echo -e "\033[31m 目录${DIR}已经存在 \033[0m"
 	exit 0
 fi
 
-echo "your input, dir: $D, link: $LINK"
-mkdir ${D}
+echo "创建目录${DIR}, 并开始初始化"
+mkdir ${DIR}
 
-cd ${D} && go mod init main && touch main.go && echo -e "package main // $LINK\n\nfunc main() {}" > main.go
+cd ${DIR} && go mod init main && touch main.go && echo -e "package main // $LINK\n\nfunc main() {}" > main.go
