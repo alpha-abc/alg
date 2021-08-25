@@ -1,5 +1,6 @@
 package main // https://leetcode.com/problems/next-permutation/
 
+
 import "fmt" /**
 Implement next permutation,
 which rearranges numbers into the lexicographically next greater permutation of numbers.

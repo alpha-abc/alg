@@ -1,4 +1,4 @@
-package main // https://leetcode.com/problems/remove-duplicates-from-sorted-array/
+package main // https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/
 
 import "fmt"
 

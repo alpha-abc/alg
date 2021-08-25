@@ -1,4 +1,4 @@
-package main // https://leetcode.com/problems/3sum-closest/
+package main // https://leetcode-cn.com/problems/3sum-closest/
 
 import (
 	"fmt"

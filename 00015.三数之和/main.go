@@ -10,6 +10,7 @@ func main() {
 	fmt.Println(threeSum(arr))
 }
 
+// 排序, 双指针
 func threeSum(nums []int) [][]int {
 	if len(nums) < 3 {
 		return [][]int{}
